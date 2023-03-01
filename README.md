@@ -4,9 +4,12 @@ Video conferencing and live streaming system built using the following technolog
 
 - Golang
 - Docker
-- WebRTC (Pion and Fiber)
+- WebRTC 
+- Fiber
+- WebSocket/Fiber
+
 
 ## Features
 
-* **Chat**
+* **Chat Rooms**
 * **Streaming**
