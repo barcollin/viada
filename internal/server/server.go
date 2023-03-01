@@ -34,6 +34,7 @@ func Run() error {
 
 	app.Get("/", handlers.Welcome)
 	app.Get("/room/create", handlers.RoomCreate)
+	app.Get("/room/:uuid", handlers.Room)
 
 	return nil
 
