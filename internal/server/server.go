@@ -36,6 +36,24 @@ func Run() error {
 	app.Get("/room/create", handlers.RoomCreate)
 	app.Get("/room/:uuid", handlers.Room)
 
-	return nil
+	app.Static("/", "./assets")
+
+	if *cert != "" {
+		return app.ListenTLS(*addr, *cert, *key)
+	}
+
+	// go func() {
+	// 	room.Peers.DispatchKeyFrame()
+	// }()
+
+	return app.Listen(*addr)
 
 }
+
+// func DispatchKeyFrame() {
+// 	for range time.NewTicker(time.Second * 3).C {
+// 		for _, room := range w.Rooms{
+// 			room.Reers.DispatchKeyFrame()
+// 		}
+// 	}
+// }
