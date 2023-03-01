@@ -13,3 +13,5 @@ WORKDIR /src
 COPY --from=0 /bin/app /bin/app
 COPY --from=0 /src/views /src/views
 COPY --from=0 /src/assets /src/assets
+
+ENTRYPOINT [ "/bin/app" ]
