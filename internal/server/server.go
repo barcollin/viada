@@ -42,15 +42,13 @@ func Run() error {
 		return app.ListenTLS(*addr, *cert, *key)
 	}
 
-	// go func() {
-	// 	room.Peers.DispatchKeyFrame()
-	// }()
+	// go dispatchKeyFrame()
 
 	return app.Listen(*addr)
 
 }
 
-// func DispatchKeyFrame() {
+// func dispatchKeyFrame() {
 // 	for range time.NewTicker(time.Second * 3).C {
 // 		for _, room := range w.Rooms{
 // 			room.Reers.DispatchKeyFrame()
