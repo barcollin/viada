@@ -33,6 +33,7 @@ func Run() error {
 	app.Use(cors.New())
 
 	app.Get("/", handlers.Welcome)
+	app.Get("/room/create", handlers.RoomCreate)
 
 	return nil
 
