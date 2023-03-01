@@ -1,4 +1,4 @@
-module github.com/barcollin/xaria
+module xaria
 
 go 1.19
 

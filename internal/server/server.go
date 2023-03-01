@@ -3,8 +3,8 @@ package server
 import (
 	"flag"
 	"os"
+	"xaria/internal/handlers"
 
-	"github.com/barcollin/xaria/internal/handlers"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"

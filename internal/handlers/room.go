@@ -36,3 +36,7 @@ func RoomWebSocket(c *websocket.Conn) {
 	// TODO: create a new room
 	// _,_, room:= createOrGetRoom(uuid)
 }
+
+// func createOrGetRoom(uuid string) (string, string, Room) {
+
+// }
